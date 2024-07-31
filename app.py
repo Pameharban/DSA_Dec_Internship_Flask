@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score,confusion_matrix, precision_score, recall_score, f1_score
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import classification_report
 from sklearn.model_selection import KFold, cross_val_score
@@ -35,7 +35,7 @@ def predict():
    Interest_Rate=float(request.form['Interest_Rate'])
    Num_of_Loan=float(request.form['Num_of_Loan'])
    Delay_from_due_date=float(request.form['Delay_from_due_date'])
-   Num_of_Delayed_Payment=float(request.form['um_of_Delayed_Payment'])
+   Num_of_Delayed_Payment=float(request.form['Num_of_Delayed_Payment'])
    Changed_Credit_Limit=float(request.form['Changed_Credit_Limit'])
    Num_Credit_Inquiries=float(request.form['Num_Credit_Inquiries'])
    Outstanding_Debt=float(request.form['Outstanding_Debt'])
